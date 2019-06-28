@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int n,ar[100],i;
+    int b[101]={0};
+    int res = 0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&ar[i]);
+        b[ar[i]]++;
+    }
+    for(int i = 0; i <= 100; i++)
+    {
+         res += b[i] / 2;
+    }
+    printf("%d",res);
+    return 0;
+}
